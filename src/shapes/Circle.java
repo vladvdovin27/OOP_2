@@ -1,6 +1,6 @@
-package shapes;
+package src.shapes;
 
-import colors.Color;
+import src.colors.Color;
 
 public class Circle extends Shape{
     private Point centre = new Point();

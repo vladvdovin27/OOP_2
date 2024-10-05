@@ -1,6 +1,6 @@
-package shapes;
+package src.shapes;
 
-import colors.Color;
+import src.colors.Color;
 
 public abstract class Shape {
     private Color color = Color.TRANSPARENT;

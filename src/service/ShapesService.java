@@ -1,7 +1,7 @@
-package service;
+package src.service;
 
-import colors.Color;
-import shapes.Shape;
+import src.colors.Color;
+import src.shapes.Shape;
 
 import java.util.List;
 import java.util.Set;

@@ -1,12 +1,11 @@
-import colors.Color;
-import service.ShapesService;
-import service.impl.ShapesServiceImpl;
-import shapes.*;
+package src;
+
+import src.colors.Color;
+import src.service.impl.ShapesServiceImpl;
+import src.shapes.*;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public  class Main {
     public static void main(String[] args) throws Exception {

@@ -1,13 +1,13 @@
-package service.impl;
+package src.service.impl;
 
-import colors.Color;
-import shapes.Shape;
+import src.colors.Color;
+import src.shapes.Shape;
 
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import service.ShapesService;
+import src.service.ShapesService;
 
 public class ShapesServiceImpl implements ShapesService {
     @Override

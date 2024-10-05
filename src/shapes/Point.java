@@ -1,6 +1,6 @@
-package shapes;
+package src.shapes;
 
-import colors.Color;
+import src.colors.Color;
 
 public class Point extends Shape{
     private double x = 0.0, y = 0.0;

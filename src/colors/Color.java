@@ -1,4 +1,4 @@
-package colors;
+package src.colors;
 
 public enum Color {
     TRANSPARENT,
