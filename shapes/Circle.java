@@ -26,13 +26,19 @@ public class Circle extends Shape{
         return this.radius;
     }
 
-    Circle(){}
+    public Circle(){}
 
-    Circle(Point centre, double radius, Color color) throws Exception {
+    public Circle(Point centre, double radius, Color color) throws Exception {
         this.validate(radius);
         this.centre = centre;
         this.radius = radius;
         setColor(color);
+    }
+
+    public Circle(Point centre, double radius) throws Exception {
+        this.validate(radius);
+        this.centre = centre;
+        this.radius = radius;
     }
 
     @Override
@@ -58,6 +64,6 @@ public class Circle extends Shape{
         System.out.println("Радиус круга: " + this.radius);
         System.out.println("Площадь круга: " + this.getSquare());
         System.out.println("Периметр круга: " + this.getPerimeter());
-        System.out.println("Цвет точки: " + getColor());
+        System.out.println("Цвет круга: " + getColor());
     }
 }

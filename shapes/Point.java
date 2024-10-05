@@ -21,12 +21,17 @@ public class Point extends Shape{
         this.y = newY;
     }
 
-    Point(){}
+    public Point(){}
 
-    Point (double x, double y, Color color){
+    public Point(double x, double y, Color color){
         this.x = x;
         this.y = y;
         setColor(color);
+    }
+
+    public Point(double x, double y){
+        this.x = x;
+        this.y = y;
     }
 
     @Override
@@ -40,5 +45,9 @@ public class Point extends Shape{
     public void move(double moveX, double moveY){
         this.x += moveX;
         this.y += moveY;
+    }
+
+    public static double distance(Point point1, Point point2){
+        return Math.sqrt(Math.pow(point1.getX() - point2.getX(), 2) + Math.pow(point1.getY() - point2.getY(), 2));
     }
 }
