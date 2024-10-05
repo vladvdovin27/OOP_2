@@ -3,7 +3,6 @@ import service.ShapesService;
 import service.impl.ShapesServiceImpl;
 import shapes.*;
 
-import javax.swing.plaf.synth.SynthPasswordFieldUI;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
