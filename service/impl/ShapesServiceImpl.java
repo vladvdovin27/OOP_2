@@ -25,7 +25,7 @@ public class ShapesServiceImpl implements ShapesService {
         double maxPerimeter = -1;
 
         for(Shape shape : shapeList){
-            maxPerimeter += Math.max(maxPerimeter, shape.getPerimeter());
+            maxPerimeter = Math.max(maxPerimeter, shape.getPerimeter());
         }
 
         return maxPerimeter;
