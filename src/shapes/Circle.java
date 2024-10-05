@@ -49,12 +49,12 @@ public class Circle extends Shape{
 
     @Override
     public double getSquare(){
-        return 3.14 * this.radius * this.radius;
+        return Math.PI * this.radius * this.radius;
     }
 
     @Override
     public double getPerimeter(){
-        return 2 * 3.14 * this.radius;
+        return 2 * Math.PI * this.radius;
     }
 
     @Override
