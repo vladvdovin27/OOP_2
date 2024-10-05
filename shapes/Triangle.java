@@ -29,7 +29,7 @@ public class Triangle extends Shape{
     }
 
     private void validate() throws Exception{
-
+        if (getSquare() == 0) throw new java.lang.Exception("Точки не должны располагаться на одной прямой");
     }
 
     public Triangle(){}

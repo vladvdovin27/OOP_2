@@ -14,6 +14,7 @@ public  class Main {
         Point point = new Point(2,1, Color.TRANSPARENT);
         Circle circle = new Circle(point, 1, Color.TRANSPARENT);
         circle.draw();
+        // circle.setRadius(-1);
         circle.setColor(Color.RED);
         circle.setCentre(new Point(2,2, Color.RED));
         circle.move(1,1);
