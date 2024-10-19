@@ -17,6 +17,12 @@ public  class Main {
         circle.setCentre(new Point(2,2, Color.RED));
         circle.move(1,1);
         circle.draw();
+//
+        Shape triang = new Triangle(new Point(0, 0), new Point(3, 6), new Point(2, 6));
+        triang.draw();
+        System.out.println();
+        triang.move(5, 5);
+        triang.draw();
 
         List<Shape> list = new ArrayList<>();
         list.add(new Triangle(new Point(0, 0), new Point(0, 4), new Point(4, 0), Color.RED));

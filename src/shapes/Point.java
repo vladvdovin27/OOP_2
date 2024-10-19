@@ -29,6 +29,12 @@ public class Point extends Shape{
         setColor(color);
     }
 
+    @Override
+    public double getPerimeter(){return 0.0;}
+
+    @Override
+    public double getSquare(){return 0.0;}
+
     public Point(double x, double y){
         this.x = x;
         this.y = y;

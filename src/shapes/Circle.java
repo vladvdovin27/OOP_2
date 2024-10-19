@@ -2,6 +2,8 @@ package src.shapes;
 
 import src.colors.Color;
 
+import java.util.function.BiConsumer;
+
 public class Circle extends Shape{
     private Point centre = new Point();
     private double radius = 1;

@@ -2,6 +2,8 @@ package src.shapes;
 
 import src.colors.Color;
 
+import java.util.function.BiConsumer;
+
 public abstract class Shape {
     private Color color = Color.TRANSPARENT;
 
@@ -13,15 +15,13 @@ public abstract class Shape {
         this.color = newColor;
     }
 
-    public double getSquare(){
-        return 0.0;
+    public abstract double getSquare();
+
+    public abstract double getPerimeter();
+
+    public abstract void move(double moveX, double moveY);
+    public void move(BiConsumer<Double, Double> lambda, double moveX, double moveY){
+        lambda.accept(moveX, moveY);
     }
-
-    public double getPerimeter(){
-        return 0.0;
-    }
-
-    public void move(double moveX, double moveY){}
-
-    public void draw(){}
+    public abstract void draw();
 }

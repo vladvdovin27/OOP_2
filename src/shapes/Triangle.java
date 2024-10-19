@@ -2,6 +2,8 @@ package src.shapes;
 
 import src.colors.Color;
 
+import java.util.function.BiConsumer;
+
 public class Triangle extends Shape{
     private Point pointA, pointB, pointC;
 
@@ -69,15 +71,18 @@ public class Triangle extends Shape{
 
     @Override
     public void move(double moveX, double moveY){
-        pointA.move(moveX, moveY);
-        pointB.move(moveX, moveY);
-        pointC.move(moveX, moveY);
+        BiConsumer<Double, Double> func = (aDouble, aDouble2) -> {
+            pointA.move(moveX, moveY);
+            pointB.move(moveX, moveY);
+            pointC.move(moveX, moveY);
+        };
+        super.move(func, moveX, moveY);
     }
 
     @Override
     public void draw(){
         System.out.println("Фигура: Треугольник");
-        System.out.print("Противоположные вершины Треугольника: (" + pointA.getX() + ", " + pointA.getY() + "); ");
+        System.out.print("Вершины Треугольника: (" + pointA.getX() + ", " + pointA.getY() + "); ");
         System.out.println("(" + pointB.getX() + ", " + pointB.getY() + "); ");
         System.out.println("(" + pointC.getX() + ", " + pointC.getY() + "); ");
         System.out.println("Площадь Треугольника: " + this.getSquare());
