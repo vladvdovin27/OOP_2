@@ -1,31 +1,31 @@
 public class Main {
     public static void main(String[] args) {
 
-        Phone phone1 = new Phone();
-        Phone phone2 = new Phone("+78777777777", "iPhone 13", 0.15);
-        Phone phone3 = new Phone("+79118671811", "iPhone 15ProMax",1.0);
+        Phone phone1 = new Phone("+79326438374", "Point");
+        Phone phone2 = new Phone("+79326437894", "Lol", 0.15);
+        Phone phone3 = new Phone("+79118234811", "SuperPhone",1.0);
 
         phone1.infoPhone(phone1);
         phone2.infoPhone(phone2);
         phone3.infoPhone(phone3);
 
-        phone1.receiveCall("Петя");
+        phone1.receiveCall("Ванька");
         System.out.println("Номер phone1: " + phone1.getNumber());
-        phone2.receiveCall("Вася");
+        phone2.receiveCall("Анастасия");
         System.out.println("Номер phone2: " + phone2.getNumber());
-        phone3.receiveCall("Ваня");
+        phone3.receiveCall("Сергей Владимирович");
         System.out.println("Номер phone3: " + phone3.getNumber());
 
-        phone1.receiveCall("Коля", "+79474846474");
+        phone1.receiveCall("Владислав", "+79631454259");
 
-        phone1.sendMessage("+79461212121", "+79666666666");
+        phone1.sendMessage("+79468485341", "+79669583421");
 
         Reader[] readers = new Reader[]{
-                new Reader("Петров В. В.", "12345", "ФМИИТ", "2005-05-05", "+79123456789"),
-                new Reader("Иванова А. А.", "67890", "ФМИИТ", "2005-11-11", "+79111234567")
+                new Reader("Вдовин В. В.", "48539", "ФМИИТ", "2005-31-05", "+7954734142"),
+                new Reader("Мулюгин А. Д.", "00000", "ФМИИТ", "2005-07-13", "+19434612353")
         };
         readers[0].takeBook(3);
-        readers[0].takeBook("Война и мир", "Капитанская дочка", "Евгений Онегин");
-        readers[0].takeBook(new Book("Война и мир", "Л.Н.Толстой"), new Book("Капитанская дочка", "А.С. Пушкин"), new Book("Энциклопедия", "А.С. Пушкин"));
+        readers[0].takeBook("Колобок", "Репка", "Линейная алгебра");
+        readers[1].takeBook(new Book("Война и мир", "Л.Н.Толстой"), new Book("Капитанская дочка", "А.С. Пушкин"), new Book("Энциклопедия", "А.С. Пушкин"));
     }
 }
