@@ -1,6 +1,6 @@
-/** <b>Класс двумерного вектора.</b>
- * Класс реализующий математические инструменты для
- * работы с двумерными векторами и выводит результаты на экран
+/** <b>The class of a two-dimensional vector.</b>
+ * A class that implements mathematical tools for
+ * working with two-dimensional vectors and displays the results on the screen
  *
  *
  * @author Vdovin Vladislav
@@ -13,8 +13,8 @@ public class Vector {
     private double x;
     private double y;
 
-    /** Конструктор класса без параметров,
-     * инициализирующий их автоматически
+    /** Constructor of a class without parameters,
+     * initializing them automatically
      */
     public Vector(){
         x = 0;
@@ -22,9 +22,9 @@ public class Vector {
     }
 
     /**
-     * Конструктор класса, принимающий координты вектора
-     * @param Cx первая координата веткора
-     * @param Cy вторая координата вектора
+     * * Class constructor that accepts vector coordinates
+     * @param Cx the first coordinate of the vector
+     * @param Cy the second coordinate of the vector
      */
     public Vector(double Cx, double Cy){
         x = Cx;
@@ -32,12 +32,12 @@ public class Vector {
     }
 
     /**
-     * Конструктор класса, принимающий координаты
-     * начала и конца вектора
-     * @param x1 первая координата начальоной точки
-     * @param y1 вторая координата начальоной точки
-     * @param x2 первая координата конечной точки
-     * @param y2 вторая координата конечной точки
+     * The constructor of the class that accepts coordinates
+     * the beginning and end of the vector
+     * @* @param x1 the first coordinate of the starting point
+     * @param y1 is the second coordinate of the starting point
+     * @param x2 the first coordinate of the endpoint
+     * @param y2 the second coordinate of the endpoint
      */
     public Vector(double x1, double y1, double x2, double y2){
         x = x2 - x1;
@@ -53,8 +53,7 @@ public class Vector {
     }
 
     /**
-     * Метод для изменения первой координаты вектора
-     * @param newX новая координата вектора
+     * Method for obtaining the first coordinate of the vector
      */
     public void setX(double newX){
         x = newX;
@@ -69,44 +68,43 @@ public class Vector {
     }
 
     /**
-     * Метод для изменения второй координаты вектора
-     * @param newY новая координата вектора
+     * Method for obtaining the second coordinate of the vector
      */
     public void setY(double newY){
         y = newY;
     }
 
     /**
-     * Метод для нахождения векторного произведения.
-     * Считает псевдоскалярное произведение векторов.
-     * Выводит результат на экран.
-     * @param vec второй вектор, который умножается на данный экземпляр класса
+     * A method for finding a vector product.
+     * Counts the pseudoscalar product of vectors.
+     * Displays the result on the screen.
+     * @param vec is the second vector that is multiplied by this instance of the class
      */
     public void vecProduct(Vector vec){
         System.out.println("Результат векторного произведения: " + (x * vec.getY() - y * vec.getX()));
     }
 
     /**
-     * Метод для нахождения скалярного произведения.
-     * Выводит результат на экран
-     * @param vec второй вектор, который умножается на данный экземпляр класса
+     * A method for finding the scalar product.
+     * Displays the result on the screen
+     * @param vec is the second vector that is multiplied by this instance of the class
      */
     public void scalarProduct(Vector vec){
         System.out.println("Результат скалярного произведения: " + (x * vec.getX() + y * vec.getY()));
     }
 
     /**
-     * Метод для вычисление длины вектора
-     * Выводит результат на экран.
+     * * Method for calculating the length of a vector
+     * Displays the result on the screen.
      */
     public void length(){
         System.out.println("Длина вектора равна: " + (Math.sqrt(x * x + y * y)));
     }
 
     /**
-     * Умножение вектора на число
-     * Возвращает вектор - результат операции
-     * @param a число типа double
+     * Multiplying a vector by a number
+     * Returns the result vector of the operation
+     * @param a number of type double
      * @return Vector
      */
     public Vector numberProduct(double a){
@@ -114,9 +112,9 @@ public class Vector {
     }
 
     /**
-     * Метод для суммирования двух векторов.
-     * Возвращает вектор - результат операции
-     * @param vec вектор
+     * A method for summing two vectors.
+     * Returns the result vector of the operation
+     * @param vec vector
      * @return Vector
      */
     public Vector sum(Vector vec){
@@ -124,9 +122,9 @@ public class Vector {
     }
 
     /**
-     * Метод для вычитания двух векторов
-     * Возвращает вектор - результат операции
-     * @param vec второй вектор в операции
+     * A method for subtracting two vectors
+     * Returns the result vector of the operation
+     * @param vec is the second vector in the operation
      * @return Vector
      */
     public Vector difference(Vector vec){
