@@ -18,7 +18,7 @@ public class Reader {
     }
 
     public void takeBook(String... bookTitles) {
-        System.out.print(name + " взял следующие книги: ");
+        System.out.print(this.name + " взял следующие книги: ");
         System.out.println();
         for (String book : bookTitles) {
             System.out.println(book);
@@ -26,7 +26,7 @@ public class Reader {
     }
 
     public void takeBook(Book... bookTitles) {
-        System.out.print(name + "взял следующие книги: ");
+        System.out.print(this.name + " взял следующие книги: ");
         System.out.println();
         for (Book book : bookTitles) {
             System.out.println(book.getTitle());
@@ -34,19 +34,16 @@ public class Reader {
     }
 
     public void returnBook(String... bookTitles) {
-        System.out.print(name + "вернул следующие книги: ");
+        System.out.print(this.name + " вернул следующие книги: ");
         for (String book : bookTitles) {
             System.out.println(book + ", ");
         }
     }
 
     public void returnBook(Book... bookTitles) {
-        System.out.print(name + "вернул следующие книги: ");
+        System.out.print(this.name + " вернул следующие книги: ");
         for (Book book : bookTitles) {
             System.out.println(book.getTitle() + ", ");
         }
-
-
     }
-
 }

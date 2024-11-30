@@ -29,7 +29,7 @@ public class Phone {
     }
 
     public String getNumber() {
-        return number;
+        return this.number;
     }
 
     public void setModel(String model) {
@@ -37,7 +37,7 @@ public class Phone {
     }
 
     public String getModel() {
-        return model;
+        return this.model;
     }
 
     public void setWeight(double weight) {
@@ -45,7 +45,7 @@ public class Phone {
     }
 
     public double getWeight() {
-        return weight;
+        return this.weight;
     }
 
     public void infoPhone(Phone phone) {
@@ -57,19 +57,16 @@ public class Phone {
     }
 
     public void receiveCall(String nameCaller, String callerNumber) {
-        System.out.println("Звонит: " + nameCaller + " (" + callerNumber + ")");
+        System.out.println("Звонит: " + nameCaller + " , Номер " + callerNumber);
     }
 
     public void sendMessage(String... phoneNumbers) {
         System.out.println("Сообщение отправлено:");
-        if (phoneNumbers.length != 0) {
-            for (String number : phoneNumbers) {
-                if (number.length() == 12)
-                    System.out.println(number);
-                else
-                    System.out.println("Нет такого номера.");
-            }
+        for (String number : phoneNumbers) {
+            if (number.length() == 12)
+                System.out.println(number);
+            else
+                System.out.println("Нет такого номера.");
         }
     }
-
 }

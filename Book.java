@@ -8,6 +8,18 @@ public class Book {
     }
 
     public String getTitle() {
-        return title;
+        return this.title;
+    }
+
+    public void setTitle(String newTitle){
+        this.title = newTitle;
+    }
+
+    public String getAuthor(){
+        return this.author;
+    }
+
+    public void setAuthor(String newAuthor){
+        this.author = newAuthor;
     }
 }

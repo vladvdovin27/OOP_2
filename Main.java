@@ -10,11 +10,11 @@ public class Main {
         phone3.infoPhone(phone3);
 
         phone1.receiveCall("Ванька");
-        System.out.println("Номер phone1: " + phone1.getNumber());
+        System.out.println("Номер 1 телефона: " + phone1.getNumber());
         phone2.receiveCall("Анастасия");
-        System.out.println("Номер phone2: " + phone2.getNumber());
+        System.out.println("Номер 2 телефона: " + phone2.getNumber());
         phone3.receiveCall("Сергей Владимирович");
-        System.out.println("Номер phone3: " + phone3.getNumber());
+        System.out.println("Номер 3 телефона: " + phone3.getNumber());
 
         phone1.receiveCall("Владислав", "+79631454259");
 
@@ -26,6 +26,6 @@ public class Main {
         };
         readers[0].takeBook(3);
         readers[0].takeBook("Колобок", "Репка", "Линейная алгебра");
-        readers[1].takeBook(new Book("Война и мир", "Л.Н.Толстой"), new Book("Капитанская дочка", "А.С. Пушкин"), new Book("Энциклопедия", "А.С. Пушкин"));
+        readers[1].takeBook(new Book("Идиот", "Ф. М. Достоевский"), new Book("Капитанская дочка", "А.С. Пушкин"), new Book("Дубровский", "А.С. Пушкин"));
     }
 }
